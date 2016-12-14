@@ -1,0 +1,275 @@
+/*Reseteo Universal*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Estilos General*/
+
+body{
+  max-width: 100%;
+}
+
+/*Estilos del jumbotron*/
+.jumbotron{
+  margin-top: -40px;
+}
+
+/*Estilos de la Barra de navegacion*/
+
+.navbar{
+  max-width: 100%;
+  background: #2d5908;
+}
+
+.navbar .lista-menu, .lista-li, .redes-sociales{
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu{
+  background: #4e8e15;
+}
+
+.dropdown .dropdown-menu li a:hover{
+  background: #76bf37;
+  color: #333333;
+  transition: 0.3s;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+/*.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+}*/
+
+.navbar .lista-menu li a{
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.navbar .lista-menu .titulo-menu{
+  font-size: 18px;
+}
+
+.navbar .lista-menu .lista-li li a:hover{
+  color: #5ba062;
+  transition: 0.5s;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales{
+  margin-left: 80px;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li a{
+  padding: 2px 5px;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li .icon-facebook:hover{
+  color: #556efc;
+  transition: 0.5s;
+}
+.navbar .lista-menu .lista-li .redes-sociales li .icon-twitter:hover{
+  color: #54cdf9;
+  transition: 0.5s;
+}
+
+.navbar .lista-menu .lista-li .redes-sociales li .icon-vine:hover{
+  color: #54f9b5;
+  transition: 0.5s;
+}
+
+.navbar .lista-menu .lista-li .dropdown button{
+  display: none;
+}
+
+/* Estilos del footer*/
+
+.footer{
+  margin-top: 100px;
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer .social [class^="icon"]{
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: white;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+    margin: 20px;
+}
+
+.footer .social [class^="icon"]:hover{
+	background: rgba(0,0,0,0.5);
+}
+
+.footer .social .icon-facebook:hover{
+  color: #556efc;
+}
+
+.footer .social .icon-twitter:hover{
+  color: #54cdf9;
+}
+.footer .social .icon-gplus:hover{
+  color: #E62117;
+}
+.footer .social .icon-vine:hover{
+  color: #54f9b5;
+}
+
+/* Estilos del info-general */
+
+.info-general{
+  max-width: 100%;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+.info-general .info-container{
+  max-width: 980px;
+  height: 680px;
+  margin: auto;
+}
+
+.info-general .info-container .titulo-general{
+  max-width: 100%;
+  display: inline-block;
+}
+
+.info-general .info-container .titulo-general h2{
+  font-size: 60px;
+  margin-top: 40px;
+}
+.info-general .info-container .titulo-general span{
+  font-size: 110px;
+  color: #FCD307;
+}
+
+.info-general .info-container .titulo-general p{
+  font-size: 20px;
+  margin-left: 110px;
+  margin-bottom: 60px;
+}
+
+.info-general .info-container .gente-creativa{
+  height: 240px;
+}
+
+.info-general .info-container .gente-creativa .row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-general .info-container .gente-creativa .row img{
+  transition: 0.5s;
+}
+
+.info-general .info-container .gente-creativa .row img:hover{
+  box-shadow: 2px 2px 10px #333;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.info-general .info-container .gente-creativa .row .col p{
+  text-align: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.info-general .info-container .informacion .row{
+  display: flex;
+  text-align: justify;
+}
+
+.info-general .info-container .informacion .row .col{
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+/* estilos del info-universidad*/
+
+.info-universidad{
+  width: 100%;
+  background: #333333;
+  color: #ffffff;
+  padding: 50px;
+  margin-top: -30px;
+}
+
+/**/
+
+.carousel-informacion{
+  width: 100%;
+  margin-top: 150px;
+}
+
+.carousel-informacion .container{
+  width: 100%;
+}
+
+/**/
+
+.logo{
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: -80px;
+}
+
+.logo .container .row .col{
+  float: left;
+  margin-right: 80px;
+}
+
+.logo .container .row .col .facultad{
+  margin-top: 20px;
+}
+
+/* estilos del panel mision*/
+
+.panel{
+  width: 600px;;
+  margin: auto;
+  box-shadow: 10px 10px 5px #333;
+}
+
+.panel .panel-body{
+  width: 600px;
+  margin: auto;
+  box-shadow: 10px 10px 5px #333;
+}

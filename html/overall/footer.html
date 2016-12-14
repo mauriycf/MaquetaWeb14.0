@@ -1,0 +1,37 @@
+<div class="logo">
+  <div class="container">
+    <div class="row">
+      <div class="col"><a href="http://www.inia.gov.ve/" target="blank"><img src="views/app/images/logo_inia.png" alt=""></a></div>
+      <div class="col"><a href="http://mat.gob.ve/" target="blank"><img src="views/app/images/logo_mat.png" alt=""></a></div>
+      <div class="col"><a href="http://www.ula.ve/" target="blank"><img src="views/app/images/logo_ula.png" width="80" alt=""></a></div>
+      <div class="col"><a href="http://nube.adm.ula.ve/geografia/" target="blank"><img class="facultad" src="views/app/images/logofacultad.png" alt=""></a></div>
+    </div>
+  </div>
+</div>
+<footer class="footer" id="footer">
+    <div class="social">
+        <a href="#" class="icon-facebook"></a>
+        <a href="#" class="icon-twitter"></a>
+        <a href="#" class="icon-gplus"></a>
+        <a href="#" class="icon-vine"></a>
+    </div>
+    <p class="text-muted credit">
+        <?php echo APP_COPY; ?>
+    </p>
+
+</footer>
+
+<script>
+  $(document).ready(function(){
+    $('.dropdown a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
+</script>
+
+</body>
+</html>
+</body>
+</html>

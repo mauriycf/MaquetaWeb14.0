@@ -1,0 +1,5 @@
+Logo:
+  inia,
+  mat,
+  ula,
+  escuela de geografia de la ULA
