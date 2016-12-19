@@ -1,3 +1,3 @@
 <?php
 
-  echo "Error de controlador";
+  include 'html/error/error.html';

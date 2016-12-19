@@ -2,155 +2,206 @@
 
 <?php include 'html/overall/top-nav.html'; ?>
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>Hello, world!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sapiente consequuntur quae excepturi doloribus velit sequi quas possimus illum itaque, optio. Tenetur dolorem dolor eum voluptas quam possimus velit facere perferendis consequuntur
-            at error atque deleniti provident debitis magnam, eligendi quod sint voluptate voluptatibus maiores autem eos ipsam pariatur. Recusandae adipisci architecto fugit aspernatur qui ipsum assumenda fugiat maiores quas.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#registrar">Registrate »</a></p>
+<style media="screen">
+    .fixed {
+        position: fixed;
+        top: 0;
+        margin: 0px 0px 80px 877px;
+    }
+
+    .nav-placeholder {}
+</style>
+
+<div class="container" col-md-9>
+    <div class="jumbotron" style="height:510px;">
+        <h1 class="titulo-jumbotron">Diplomado en Teledetección <br> y Sistemas de Información Geográfica aplicado a la Agricultura</h1>
+        <br>
+        <p>Es una necesidad urgente que Venezuela tenga acceso a la tecnología para el fortalecimiento de la actividad agrícola, no solo urge producir lo que nos comemos, urge conocer que, cuánto, cómo y dónde se produce.</p>
+        <p>Dentro del conjunto de Tecnologías de Información y Comunicación (TIC), la Teledetección útiles en el desarrollo y los Sistemas de Información Geográfica (SIG), son herramientas útiles de la agricultura, la aplicación de ́éstas herramientas debe
+            ser direccionada en cuatro líneas estratégicas que conduzca a la formación, investigación, innovación y desarrollo del sector agrícola del país; con el fin de impulsar la inclusón del sector en la apropiación de tecnologías de punta para el
+            monitoreo continuo de sus sistemas de producción.</p>
+        <p>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Inscribete Aquí!</a>
+        </p>
     </div>
 </div>
 
-<!-- <div class="container">
+<section class="main container">
     <div class="row">
-        <div class="col-md-3">
-            <a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom"><img src="views/app/images/archivero.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom"><img src="views/app/images/documentos.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom"> <img src="views/app/images/ideas.png" alt=""></a>
-        </div>
-        <div class="col-md-3">
-            <a href="#" data-toggle="tooltip" title="Hooray!" data-placement="bottom"><img src="views/app/images/lapiz.png" alt=""></a>
-        </div>
+        <section class="posts col-md-9">
+            <article class="post clearfix" id="objetivos">
+                <div class="tira"></div>
+                <h2 class="post-title">Objetivos</h2>
+                <p>Capacitar profesionales en el uso y manejo de Teledeteccion y Sistemas de Informacion Geografica aplicadas a la actividad agrıcola.</p>
+                <h2>Perfil del egresado</h2>
+                <p class="text-justify">Al termino del diplomado los participantes contaran con una amplia perspectiva de los aspectos conceptuales y metodologicos aplicables en el analisis del territorio, ası como del conocimiento y las habilidades requeridas para el uso de
+                    las diversas herramientas que ofrecen los software de SIG libre y de codigo abierto, lo que mejorara la ventaja competitiva de los participantes en el ambito academico y agrıcola.</p>
+                <h3>Modalidad de Estudio</h3>
+                <p>El diplomado será desarrollado bajo modalidad semi-presencial</p>
+                <h3>Duración</h3>
+                <p>El plan de estudio del diplomado está estructurado para ser desarrollado en 6 meses, con una duración de 24 semanas y 180 horas académicas.</p>
+                <h3>Dirigido A</h3>
+                <p>Agricultores, productores, empresarios agrícolas, ingenieros agrónomos, técnicos agrícolas, ingenieros forestales, geógrafos, consultores, docentes, estudiantes, investigadores en el área agrícola, cooperativas campesinas.</p>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="requisitos">
+                <div class="tira"></div>
+                <h2 class="post-title">Requisitos</h2>
+                <h4>&nbsp;&nbsp;Manejo básico de sistemas operativos.</h4>
+                <h4>&nbsp;&nbsp;Manejo básico de "Software de ofimática"</h4>
+                <h4>&nbsp;&nbsp;Manejo básico de internet: correo-e, chat, foro.</h4>
+                <h2>Número de Participantes</h2>
+                <h4>&nbsp;&nbsp;Hasta 200 participantes por cohorte.</h4>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="fechasImportantes">
+                <div class="tira"></div>
+                <h2>Fechas importantes</h2>
+                <br>
+                <p><b style="font-size: 18px;">Inscripcion:</b>&nbsp;&nbsp; Del 22 de enero al 22 de Febrero de 2017.</p>
+                <b style="font-size: 18px;">Inicio de actividades: </b>
+                <p>- Taller introductorio: 9 y 10 de Marzo de 2017</p>
+                <p>- Comienzo del diplomado: 13 de Marzo de 2017</p>
+                <p><b style="font-size: 18px;">Culminación:</b>&nbsp;&nbsp; 13 de Septiembre de 2017</p>
+                <p><b style="font-size: 18px;">Entrega de diplomas:</b>&nbsp;&nbsp; 22 de Septiembre de 2017</p>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="documentosAdmision">
+                <div class="tira"></div>
+                <h2>Documentos de admisión</h2>
+                <p>Los documentos que los participantes deben cumplir para ser admitidos son:</p>
+                <ul style="margin-left:60px;">
+                    <li>Fotocopia de la Cédula de Identidad</li>
+                    <li>Síntesis curricular con foto adjunta</li>
+                </ul>
+                <h2>Procesos de inscripción</h2>
+                <ul style="margin-left:60px;">
+                    <li>Ingresar a la pagina web: www...</li>
+                    <li>Llenar y enviar planilla</li>
+                    <li>Confirmar inscripción durante el Taller Introductorio</li>
+                </ul>
+                <h2>Taller Introductorio</h2>
+                <p class="text-justify">Como inicio del Diplomado se pretende realizar un Taller Introductorio, al cual tendrá como propósito dar a conocer como está estructurado el Diplomado y cuál será la dinámica a seguir en el desarrollo del mismo. Así mismo, se espera facilitar
+                    herramientas para que cada participante explore, desarrolle y sistematice los temas contenidos en los módulos, para que posteriormente puedan ser discutidos con los facilitadores en las clases presenciales, en las cuales además se
+                    desarrollarán las prácticas. De igual forma será entregado el material correspondiente al modulo I, por lo tanto la participación es obligatoria.</p>
+                <ul style="margin-left:60px;">
+                    <li>Fecha: 9 y 10 de Marzo de 2017</li>
+                    <li>Lugar: Escuela de Geografía, Universidad de Los Andes, Mérida, Estado Mérida.</li>
+                </ul>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="certificacion">
+                <div class="tira"></div>
+                <h2>Certificación</h2>
+                <p>Serán acreditados los participantes que culminen satisfactoriamente todas las actividades y requerimientos del Diplomado</p>
+                <h2 class="post-title">Plan de Estudios</h2>
+                <p class="text-justify">El Plan de Estudios contempla tres módulos, dos de los cuales serán impartidos mediante un programa teórico-práctico y el tercer módulo el proyecto de investigación o trabajo final que consiste en la aplicación teórica para la resolución
+                    de algún problema en el área agrícola y/o ganadero.</p>
+                <p class="text-justify"><b>Módulo 1 Fundamentos (10 semanas):</b> Consiste en 4 materias que cubren los aspectos fundamentales de:
+                    <p>(1) Agrimensura y Cartografía</p>
+                    <p>(2) Teledetección I</p>
+                    <p>(3) Teledetección II</p>
+                    <p>(4) Sistemas de Información Geográfica</p>
+                </p>
+                <p class="text-justify"><b>Módulo 2 Dominio (6 semanas):</b> Consta de 3 materias específicas de las Ciencias agrícolas:
+                    <p>(1) Inventario de Cultivos. Manejo de Agua para la Agricultura</p>
+                    <p>(2) Cartografía de Suelos. Evaluación de Tierras</p>
+                    <p>(3) Manejo del Recurso Suelo y Agua.</p>
+                </p>
+                <p class="text-justify"><b>Módulo 3 Proyecto:</b> En este módulo los estudiantes llevarán a cabo un proyecto de investigación, realizarán un informe final y una presentación oral ante un comité de expertos. (8 semanas)</p>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="metodologia">
+                <div class="tira"></div>
+                <h2 class="post-title">Metodología</h2>
+                <p class="text-justify">El diplomado será desarrollado bajo modalidad semi-presencial, la parte bajo modalidad virtual (a distancia), estará alojada en la plataforma Moodle de la oficina de Tecnologías, Información y Comunicación del Ministerio del Poder Popular
+                    para la Agricultura Productiva y Tierras. La parte presencial se llevará a cabo en la Finca Florentino, ubicada en Barrancas estado Barinas, adscrita al Ministerio del Poder Popular para la Agricultura Productiva y Tierras. Antes de
+                    iniciar los módulos se llevará a cabo en las instalaciones de la Finca Florentino un Taller de Introductorio de la plataforma Moodle en el que además se darán las instrucciones generales del diplomado. Será requisito para la obtención
+                    del Diploma, cumplir con las actividades asignadas y contar con el 75% de asistencia a clases de cada uno de los módulos.</p>
+                <p class="text-justify">A efectos de facilitar el desarrollo del diplomado cada participante tendrá acceso a una Biblioteca Digital en la cual podrá acceder a toda la información necesaria para completar cada modulo, la cual estará a disponible a través de internet
+                    y será entregada en material físico (CD/DVD) para su consulta oportuna.</p>
+                <p class="text-justify">Módulo 2 Dominio: Consta de 3 materias específicas de las Ciencias agrícolas (1) Inventario de Cultivos. Manejo de Agua para la Agricultura (2) Cartografía de Suelos. Evaluación de Tierras (3) Manejo del Recurso Suelo y Agua. (6 semanas)</p>
+                <p class="text-justify">Módulo 3 Proyecto: En este módulo los estudiantes llevarán a cabo un proyecto de investigación, realizarán un informe final y una presentación oral ante un comité de expertos. (8 semanas)</p>
+                <div class="tira"></div>
+            </article>
+
+            <article class="post clearfix" id="resultadosEsperados">
+                <div class="tira"></div>
+                <h2>Resultados Esperados</h2>
+                <p>Al final del Diplomado se espera que el participante tenga la capacidad de:</p>
+                <ul style="margin-left:60px;">
+                    <li>Reconocer las principales técnicas para el procesamiento digital de imágenes orientadas al sector agrícola.</li>
+                    <li>Generar indicadores de rendimiento y productividad a partir de la información obtenida de las imágenes.</li>
+                    <li>Optimizar el uso del suelo y agua a partir de la identificación de la variabilidad espacial de las unidades de producción.</li>
+                    <li>Implementar un Sistema de Información Geográfico bajo un software libre, que permita realizar una mejor planificación del sector agrícola.</li>
+                    <li>Valorar la potencialidad de aplicar las herramientas de Teledeteccion y SIG en el sector con la mirada orientada hacia la precisión, el automatismo y la produictividad.</li>
+                </ul>
+                <div class="tira"></div>
+            </article>
+
+        </section>
+
+        <aside id="aside" class="col-md-3 hidden-xs hidden-sm">
+            <h4>Categorias</h4>
+            <div class="list-group">
+                <a href="#inicio" class="list-group-item" id="inicio" >Inicio</a>
+                <a href="#objetivos" class="list-group-item" id="objetivos" >Objetivos</a>
+                <a href="#requisitos" class="list-group-item" id="requisitos" >Requisitos</a>
+                <a href="#fechasImportantes" class="list-group-item" id="fechasImportantes" >Fechas importantes</a>
+                <a href="#documentosAdmision" class="list-group-item" id="documentosAdmision" >Documentos Admisión</a>
+                <a href="#certificacion" class="list-group-item" id="certificacion" >Certificación</a>
+                <a href="#metodologia" class="list-group-item" id="metodologia" >Metodología</a>
+                <a href="#resultadosEsperados" class="list-group-item" id="resultadosEsperados" >Resultados Esperados</a>
+            </div>
+        </aside>
+
     </div>
-</div> -->
+</section>
 
-<div class="info-universidad">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iusto, nesciunt similique dolores tempore excepturi fuga aspernatur qui a amet debitis sint aliquam magnam animi eius iure nihil eligendi, libero, et consequatur. Dicta laborum
-                  modi distinctio nihil, fugiat nulla animi.</p>
-              <p><a href="#" class="btn btn-default" role="button">Ver detalles »</a></p>
-          </div>
-          <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere maiores iusto excepturi doloremque nostrum laborum, voluptas nihil, nemo, possimus fugiat ipsum quidem dicta neque. Deserunt et ipsum perferendis saepe eius asperiores iste quos
-                  magnam fugiat aliquid, odit voluptate blanditiis doloremque!</p>
-              <p><a href="#" class="btn btn-default" role="button">Ver detalles »</a></p>
-          </div>
-          <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur possimus qui corporis cumque porro laudantium rem odio perferendis natus harum quos voluptatibus illo officiis, vel adipisci ducimus maxime enim aliquam similique, nostrum
-                  atque eos. Excepturi recusandae, voluptas quaerat qui dicta.</p>
-              <p><a href="#" class="btn btn-default" role="button">Ver detalles »</a></p>
-          </div>
-      </div>
-  </div>
-</div>
+<script>
+    jQuery(document).ready(function() {
 
-<div class="info-general" id="info-general">
-    <div class="info-container">
-        <div class="titulo-general">
-            <h2><span>+</span> SOBRE NOSOTROS</h2>
-            <p>La gente detrás del rincón creativo</p>
-        </div>
-        <div class="gente-creativa">
-            <div class="row">
-                <div class="col">
-                    <img src="https://static.wixstatic.com/media/8d13be_2d48e928293d471283c6584bc165c1ec.jpg/v1/fill/w_213,h_201,al_c,q_80,usm_0.66_1.00_0.01/8d13be_2d48e928293d471283c6584bc165c1ec.jpg" alt="">
-                    <p>Lorem ipsum.</p>
-                </div>
-                <div class="col">
-                    <img src="https://static.wixstatic.com/media/8d13be_9234a306c2e64a0594c91e97ba01796b.jpg/v1/fill/w_213,h_201,al_c,q_80,usm_0.66_1.00_0.01/8d13be_9234a306c2e64a0594c91e97ba01796b.jpg" alt="">
-                    <p> Lorem ipsum.</p>
-                </div>
-                <div class="col">
-                    <img src="https://static.wixstatic.com/media/8d13be_662b99b9bd1e4020ae2929e71e372996.jpg/v1/fill/w_213,h_201,al_c,q_80,usm_0.66_1.00_0.01/8d13be_662b99b9bd1e4020ae2929e71e372996.jpg" alt="">
-                    <p>Lorem ipsum.</p>
-                </div>
-                <div class="col">
-                    <img src="https://static.wixstatic.com/media/8d13be_627c56bf5be848ba849c5d2aa0df90ce.jpg/v1/fill/w_215,h_201,al_c,q_80,usm_0.66_1.00_0.01/8d13be_627c56bf5be848ba849c5d2aa0df90ce.jpg" alt="">
-                    <p>Lorem ipsum.</p>
-                </div>
-            </div>
-        </div>
-        <div class="informacion">
-            <div class="row">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eos quisquam quaerat. Incidunt ut error, soluta reprehenderit necessitatibus fugiat, quidem odit eum sed assumenda amet explicabo cumque officia aperiam non? Iusto, earum?
-                        Delectus harum obcaecati, non assumenda, laudantium, distinctio ducimus, temporibus ab eum adipisci labore numquam impedit dolores nihil voluptatum.</p>
-                </div>
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure tempore assumenda illum, rerum fuga distinctio magnam. Eius minima aspernatur adipisci esse a totam culpa veniam ipsam illum dolorem, dolor non, ad, aliquid enim consequuntur
-                        nihil. Recusandae officia natus vel excepturi quibusdam numquam aspernatur esse nulla. Officia architecto cumque sequi eius saepe unde iure, laudantium cupiditate voluptatibus veritatis. Eum qui, quo?</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        var navOffset = jQuery("aside").offset().top;
 
-<div class="carousel-informacion">
-  <div class="container">
-    <h3 style="text-align:center;">Diplomados</h3>
-    <div class="row">
-      <div class="">
-        <div class="carousel slide" id="carousel-ejemplo" data-ride="carousel" >
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-ejemplo" data-slide-to="0" class="active" ></li>
-            <li data-target="#carousel-ejemplo" data-slide-to="1" ></li>
-            <li data-target="#carousel-ejemplo" data-slide-to="2" ></li>
-            <li data-target="#carousel-ejemplo" data-slide-to="3" ></li>
-            <li data-target="#carousel-ejemplo" data-slide-to="4" ></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-              <img src="views/app/images/agricultura.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Agricultura</h3>
-              </div>
-            </div>
-            <div class="item">
-              <img src="views/app/images/camionAgro.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Agricultura</h3>
-              </div>
-            </div>
-            <div class="item">
-              <img src="views/app/images/diplomasAgroJovenes.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Agricultura</h3>
-              </div>
-            </div>
-            <div class="item">
-              <img src="views/app/images/diplomaAgro.jpg" alt="">
-              <div class="carousel-caption">
-                <h3>Agricultura</h3>
-              </div>
-            </div>
-          </div>
-          <a href="#carousel-ejemplo" class="left carousel-control" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previo</span>
-          </a>
-          <a href="#carousel-ejemplo" class="right carousel-control" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">siguiente</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        jQuery("aside").wrap('<div class="nav-placeholder"></div>');
+        jQuery(".nav-placeholder").height(jQuery("aside").outerHeight());
 
-<!-- <script>
-    $(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
+        jQuery(window).scroll(function() {
+            var scrollPos = jQuery(window).scrollTop();
+
+            if (scrollPos >= navOffset) {
+                jQuery("aside").addClass("fixed");
+            } else {
+                jQuery("aside").removeClass("fixed");
+            }
+
+        });
+
     });
-</script> -->
+
+    // $("#inicio").click(function() {
+    //     $('html, body').animate({
+    //         scrollTo: $("#barra").offset().top
+    //     }, 2000);
+    // });
+
+    $("a[href^='#']").on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top
+      }, 1000);
+    });
+
+    if ($(window.location.hash).length > 1) {
+      $("html, body").animate({
+        scrollTop: $(window.location.hash).offset().top
+      }, 1000);
+    }
+</script>
 
 <?php include 'html/overall/footer.html'; ?>

@@ -1,41 +1,75 @@
 <body>
 
+    <div class="cintillo">
+        <img src="views/app/images/cintillomat.png" alt="">
+    </div>
+    <!-- Para telefonos -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="barra">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="font-size:14px;color:#fff;" class="navbar-brand" href="#"><?php echo APP_TITLE; ?></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="?view=index">Inicio</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Institucion <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="?view=cronograma">Cronograma</a></li>
+                <li><a href="?view=plandeestudio">Plan de estudios</a></li>
+                <li><a href="?view=requisitos">Requisitos</a></li>
+              </ul>
+            </li>
+            <li><a href="?view=ubicacion">Ubicación</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
 
-    <div class="navbar">
+  <!-- para ordenadores -->
+
+    <div class="navbar" id="inicio">
         <ul class="lista-menu">
-            <li class="titulo-menu"><a href="#"><h3><?php echo APP_TITLE; ?></h3></a></li>
+            <li class="titulo-menu"><a href="#"><h4><?php echo APP_TITLE; ?></h4></a></li>
             <div class="lista-li">
                 <li><a href="?view=index"><span class="glyphicon glyphicon-home"style="font-size:14px;"></span> Inicio</a></li>
                 <div class="dropdown">
                     <li class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><a href=""><span class="glyphicon glyphicon-triangle-bottom" style="font-size: 14px;"></span> Estudios</a></li>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Diplomado</a></li>
+                        <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Diplomado</a></li> -->
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="?view=cronograma">Cronograma</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Requisitos</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Plan de estudio</a></li>
-                        <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inscripciones</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="?view=requisitos">Requisitos</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="?view=plandeestudio">Plan de estudio</a></li>
+                        <!-- <li role="presentation" class="divider"></li> -->
+                        <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Inscripciones</a></li> -->
                     </ul>
                 </div>
                 <div class="dropdown">
                     <li class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><a href=""><span class="glyphicon glyphicon-triangle-bottom" style="font-size: 14px;"></span> Institución</a></li>
                     <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">Acerca de Nosotros</a></li>
+                        <li><a tabindex="-1" href="?view=acercadenosotros">Acerca de Nosotros</a></li>
                         <li><a tabindex="-1" href="?view=mision">Misión</a></li>
                         <li><a tabindex="-1" href="?view=vision">Visión</a></li>
                         <li class="dropdown-submenu">
-                            <a class="test" tabindex="-1" href="#">Objetivos <span class="caret"></span></a>
+                            <a class="test" tabindex="-1" style="cursor:pointer;">Objetivos <span class="glyphicon glyphicon-triangle-right"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a tabindex="-1" href="#">Objetivos Generales</a></li>
                                 <li><a tabindex="-1" href="#">Objetivos especificos</a></li>
                             </ul>
                         </li>
                         <li role="presentation" class="divider"></li>
-                        <li><a tabindex="-1" href="#">Ubicación</a></li>
+                        <li><a tabindex="-1" href="?view=ubicacion">Ubicación</a></li>
                     </ul>
                 </div>
-                <li><a href="#" data-toggle="modal" data-target="#registrar"><span class="glyphicon glyphicon-user" style="font-size: 14px;"></span> Registrarse</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in" style="font-size: 14px;"></span> Iniciar Sesión</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"style="font-size:14px;"></span> Contactanos</a></li>
                 <div class="redes-sociales">
                     <li>
                         <a class="icon-facebook" href="#"></a>
@@ -54,69 +88,44 @@
     <div class="modal fade" role="dialog" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" name="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Iniciar Sesión</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="form">
-                        <div class="form-group">
-                            <label for="usrname_or_email"><span class="glyphicon glyphicon-user"></span> Usuario o Email</label>
-                            <input type="text" class="form-control" id="user_login" placeholder="Introducir Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
-                            <input type="password" id="pass_login" placeholder="Introducir Contraseña" class="form-control">
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="1" id="session_login" checked>Recordarme</label>
-                        </div>
-                        <button type="button" class="btn btn-default btn-success btn-block" id="iniciar_sesion" name="button"><span class="glyphicon glyphicon-off"></span></button>
+                <form action="?view=phpemail" method="POST" name="contacform" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <button type="button" name="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> ¡Contactanos Ya!</h4>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                    <p>¿No estás registrado? <a href="#" data-toggle="modal" data-target="#Registro">Registrate!</a></p>
-                    <p>¿Contraseña <a href="#" data-toggle="modal" data-target="#Lostpass">perdida?</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" role="dialog" id="registrar">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Registro</h4>
-                </div>
-                <div class="modal-body">
-                    <div role="form" onkeypress="return runScriptReg(event)">
-                        <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Usuario</label>
-                            <input type="text" class="form-control" id="user_reg" placeholder="Introduce un nombre de usuario">
+                    <div class="modal-body">
+                        <div class="form">
+                            <div class="form-group">
+                                <label for="nombre"><span class="glyphicon glyphicon-user"></span> Nombres</label>
+                                <input type="text" class="form-control" name="nombre" id="user_login" placeholder="Introducir Nombres">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido"><span class="glyphicon glyphicon-user"></span> Apellidos</label>
+                                <input type="text" class="form-control" name="apellido" id="user_login" placeholder="Introducir Apellidos">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span class="glyphicon glyphicon-lock"></span> Tu Correo</label>
+                                <input type="email" class="form-control" name="email" id="user_login" placeholder="Introducir Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje"><span class="glyphicon glyphicon-envelope"></span> Tu Mensaje</label><br>
+                                <textarea name="mensaje" cols="67" rows="5"></textarea>
+                            </div>
+                            <!-- <div class="form-group">
+                                <label for="email"><span class="glyphicon glyphicon-envelope"></span> Adjuntar copia de la Cédula</label>
+                                <input type="file" name="archivoCedula" size="20">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span class="glyphicon glyphicon-envelope"></span> Adjuntar Curriculum</label>
+                                <input type="file" name="archivoCurriculum" size="20">
+                            </div> -->
+                            <button type="submit" class="btn btn-default btn-success btn-block" id="iniciar_sesion" name="button"><span class="glyphicon glyphicon-off"></span></button>
                         </div>
-                        <div class="form-group">
-                            <label for="usrname"><span class="glyphicon glyphicon-envelope"></span> Email</label>
-                            <input type="email" class="form-control" id="email_reg" placeholder="Introduce tu correo electrónico">
-                        </div>
-                        <div class="form-group">
-                            <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
-                            <input type="password" class="form-control" id="pass_reg" placeholder="Introduce tu contraseña">
-                        </div>
-                        <div class="form-group">
-                            <label for="psw_two"><span class="glyphicon glyphicon-eye-open"></span> Repite tu Contraseña</label>
-                            <input type="password" class="form-control" id="pass_reg_dos" placeholder="Introduce tu contraseña de nuevo">
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" id="tyc_reg" value="1" checked>Acepto los T&C</label>
-                        </div>
-                        <button type="button" onclick="goReg()" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Registrarme</button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
-                </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
