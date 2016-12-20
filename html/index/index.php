@@ -147,7 +147,7 @@
         </section>
 
         <aside id="aside" class="col-md-3 hidden-xs hidden-sm">
-            <h4>Categorias</h4>
+            <h4><img src="views/app/images/Logo2.png" alt="">Categorias</h4>
             <div class="list-group">
                 <a href="#inicio" class="list-group-item" id="inicio" >Inicio</a>
                 <a href="#objetivos" class="list-group-item" id="objetivos" >Objetivos</a>

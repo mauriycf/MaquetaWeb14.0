@@ -8,6 +8,9 @@
 
 body{
   max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*Estilos del jumbotron*/
@@ -167,7 +170,7 @@ body{
 /* Estilos del footer*/
 
 .footer{
-  margin-top: 100px;
+  margin-top: 180px;
 	background: #333;
 	color: #fff;
 	padding: 10px;
@@ -226,75 +229,6 @@ body{
 	color: #2D5908;
 }
 
-/* Estilos del info-general */
-
-.info-general{
-  max-width: 100%;
-  height: 600px;
-  margin-bottom: 50px;
-}
-
-.info-general .info-container{
-  max-width: 980px;
-  height: 680px;
-  margin: auto;
-}
-
-.info-general .info-container .titulo-general{
-  max-width: 100%;
-  display: inline-block;
-}
-
-.info-general .info-container .titulo-general h2{
-  font-size: 60px;
-  margin-top: 40px;
-}
-.info-general .info-container .titulo-general span{
-  font-size: 110px;
-  color: #FCD307;
-}
-
-.info-general .info-container .titulo-general p{
-  font-size: 20px;
-  margin-left: 110px;
-  margin-bottom: 60px;
-}
-
-.info-general .info-container .gente-creativa{
-  height: 240px;
-}
-
-.info-general .info-container .gente-creativa .row{
-  display: flex;
-  justify-content: space-between;
-}
-
-.info-general .info-container .gente-creativa .row img{
-  transition: 0.5s;
-}
-
-.info-general .info-container .gente-creativa .row img:hover{
-  box-shadow: 2px 2px 10px #333;
-  padding: 5px;
-  transition: 0.5s;
-}
-
-.info-general .info-container .gente-creativa .row .col p{
-  text-align: center;
-  margin-top: 10px;
-  color: #333;
-}
-
-.info-general .info-container .informacion .row{
-  display: flex;
-  text-align: justify;
-}
-
-.info-general .info-container .informacion .row .col{
-  margin-right: 30px;
-  margin-top: 15px;
-}
-
 /* estilos del info-universidad*/
 
 .info-universidad{
@@ -310,7 +244,7 @@ body{
  .logo{
   width: 100%;
   background: #fff;
-  margin-bottom: -90px;
+  margin-bottom: -180px;
   padding-top: 20px;
   display: flex;
 }
@@ -348,7 +282,15 @@ section article{
 
 section aside{
   box-shadow: 5px 5px 10px;
-  padding: 5px;
+  padding: 10px;
+  background: #2D5908;
+  color: #fff;
+}
+
+section aside .list-group a:hover{
+  background: #5b912b;
+  color: #fff;
+  transition: 0.5s;
 }
 
 section .row article table{
