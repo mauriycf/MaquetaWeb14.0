@@ -3,3 +3,11 @@ Logo:
   mat,
   ula,
   escuela de geografia de la ULA
+
+Redes Sociales:
+  Twitter:
+    Diplomadoteledetec
+  correo:
+    oticmatvenezuela@gmail.com
+  contraseña:
+    oticmatvenezuela

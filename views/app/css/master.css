@@ -155,8 +155,8 @@ body{
   transition: 0.5s;
 }
 
-.navbar .lista-menu .lista-li .redes-sociales li .icon-vine:hover{
-  color: #54f9b5;
+.navbar .lista-menu .lista-li .redes-sociales li .icon-instagram:hover{
+  color: #968554;
   transition: 0.5s;
 }
 
@@ -202,8 +202,8 @@ body{
 .footer .social .icon-gplus:hover{
   color: #E62117;
 }
-.footer .social .icon-vine:hover{
-  color: #54f9b5;
+.footer .social .icon-instagram:hover{
+  color: #968554;
 }
 
 .informacion-footer{

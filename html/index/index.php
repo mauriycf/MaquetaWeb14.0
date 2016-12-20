@@ -21,7 +21,7 @@
             ser direccionada en cuatro líneas estratégicas que conduzca a la formación, investigación, innovación y desarrollo del sector agrícola del país; con el fin de impulsar la inclusón del sector en la apropiación de tecnologías de punta para el
             monitoreo continuo de sus sistemas de producción.</p>
         <p>
-            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Inscribete Aquí!</a>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Contactanos Aquí!</a>
         </p>
     </div>
 </div>
