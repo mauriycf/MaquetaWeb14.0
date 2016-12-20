@@ -17,9 +17,9 @@
         <h1 class="titulo-jumbotron">Diplomado en Teledetección <br> y Sistemas de Información Geográfica aplicado a la Agricultura</h1>
         <br>
         <p>Es una necesidad urgente que Venezuela tenga acceso a la tecnología para el fortalecimiento de la actividad agrícola, no solo urge producir lo que nos comemos, urge conocer que, cuánto, cómo y dónde se produce.</p>
-        <p>Dentro del conjunto de Tecnologías de Información y Comunicación (TIC), la Teledetección útiles en el desarrollo y los Sistemas de Información Geográfica (SIG), son herramientas útiles de la agricultura, la aplicación de ́éstas herramientas debe
-            ser direccionada en cuatro líneas estratégicas que conduzca a la formación, investigación, innovación y desarrollo del sector agrícola del país; con el fin de impulsar la inclusón del sector en la apropiación de tecnologías de punta para el
-            monitoreo continuo de sus sistemas de producción.</p>
+        <p>Dentro del conjunto de Tecnologías de Información y Comunicación (TIC), la Teledetección y los Sistemas de Información Geográfica (SIG) son herramientas útiles en la agricultura, la aplicación de estas debe
+            ser direccionada en cuatro líneas estratégicas que conduzca a la formación, investigación, innovación y desarrollo del sector agrícola del país; con el fin de impulsar la inclusión del sector en la apropiación de tecnologías de punta para el
+            monitoreo continuo de los sistemas de producción.</p>
         <p>
             <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Contactanos Aquí!</a>
         </p>
@@ -34,14 +34,14 @@
                 <h2 class="post-title">Objetivos</h2>
                 <p>Capacitar profesionales en el uso y manejo de Teledeteccion y Sistemas de Informacion Geografica aplicadas a la actividad agrıcola.</p>
                 <h2>Perfil del egresado</h2>
-                <p class="text-justify">Al termino del diplomado los participantes contaran con una amplia perspectiva de los aspectos conceptuales y metodologicos aplicables en el analisis del territorio, ası como del conocimiento y las habilidades requeridas para el uso de
-                    las diversas herramientas que ofrecen los software de SIG libre y de codigo abierto, lo que mejorara la ventaja competitiva de los participantes en el ambito academico y agrıcola.</p>
+                <p class="text-justify">Al término del diplomado los participantes contaran con una amplia perspectiva de los aspectos conceptuales y metodologicos aplicables en el análisis del territorio, ası como del conocimiento y las habilidades requeridas para el uso de
+                    las diversas herramientas que ofrecen los software de SIG libre y de código abierto, lo que mejorará la ventaja competitiva de los participantes en el ámbito académico y agrícola.</p>
                 <h3>Modalidad de Estudio</h3>
                 <p>El diplomado será desarrollado bajo modalidad semi-presencial</p>
                 <h3>Duración</h3>
                 <p>El plan de estudio del diplomado está estructurado para ser desarrollado en 6 meses, con una duración de 24 semanas y 180 horas académicas.</p>
                 <h3>Dirigido A</h3>
-                <p>Agricultores, productores, empresarios agrícolas, ingenieros agrónomos, técnicos agrícolas, ingenieros forestales, geógrafos, consultores, docentes, estudiantes, investigadores en el área agrícola, cooperativas campesinas.</p>
+                <p>Agricultores, productores, empresarios agrícolas, ingeníeros agrónomos, técnicos agrícolas, ingeníeros forestales, geógrafos, consultores, docentes, estudiantes, investigadores en el área agrícola, cooperativas campesinas.</p>
                 <div class="tira"></div>
             </article>
 
@@ -79,12 +79,12 @@
                 </ul>
                 <h2>Procesos de inscripción</h2>
                 <ul style="margin-left:60px;">
-                    <li>Ingresar a la pagina web: www...</li>
+                    <li>Ingresar a: <a href="#" data-toggle="modal" data-target="#myModal">Contactanos</a></li>
                     <li>Llenar y enviar planilla</li>
                     <li>Confirmar inscripción durante el Taller Introductorio</li>
                 </ul>
                 <h2>Taller Introductorio</h2>
-                <p class="text-justify">Como inicio del Diplomado se pretende realizar un Taller Introductorio, al cual tendrá como propósito dar a conocer como está estructurado el Diplomado y cuál será la dinámica a seguir en el desarrollo del mismo. Así mismo, se espera facilitar
+                <p class="text-justify">Como inicio del Diplomado se pretende realizar un Taller Introductorio, el cual tendrá como propósito dar a conocer como está estructurado el Diplomado y cual será la dinámica a seguir en el desarrollo del mismo. Así mismo, se espera facilitar
                     herramientas para que cada participante explore, desarrolle y sistematice los temas contenidos en los módulos, para que posteriormente puedan ser discutidos con los facilitadores en las clases presenciales, en las cuales además se
                     desarrollarán las prácticas. De igual forma será entregado el material correspondiente al modulo I, por lo tanto la participación es obligatoria.</p>
                 <ul style="margin-left:60px;">
@@ -139,7 +139,7 @@
                     <li>Generar indicadores de rendimiento y productividad a partir de la información obtenida de las imágenes.</li>
                     <li>Optimizar el uso del suelo y agua a partir de la identificación de la variabilidad espacial de las unidades de producción.</li>
                     <li>Implementar un Sistema de Información Geográfico bajo un software libre, que permita realizar una mejor planificación del sector agrícola.</li>
-                    <li>Valorar la potencialidad de aplicar las herramientas de Teledeteccion y SIG en el sector con la mirada orientada hacia la precisión, el automatismo y la produictividad.</li>
+                    <li>Valorar la potencialidad de aplicar las herramientas de Teledeteccion y SIG en el sector con la mirada orientada hacia la precisión, el automatismo y la productividad.</li>
                 </ul>
                 <div class="tira"></div>
             </article>

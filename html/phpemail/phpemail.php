@@ -17,34 +17,35 @@
   $nombre=$_POST['nombre'];
   $apellido=$_POST['apellido'];
   $email=$_POST['email'];
-  $archivoCurriculum = $_FILES["archivoCurriculum"];
-  $archivoCedula = $_FILES["archivoCedula"];
+  $mensaje=$_POST['mensaje'];
+  // $archivoCurriculum = $_FILES["archivoCurriculum"];
+  // $archivoCedula = $_FILES["archivoCedula"];
   $msg = "";
   $msgExitoso = "";
   $error;
 
-  if ($archivoCurriculum["size"] > 0) {
-    $mail->addAttachment($archivoCurriculum["tmp_name"], $archivoCurriculum["name"]);
-  }
-
-  if ($archivoCedula["size"] > 0) {
-    $mail->addAttachment($archivoCedula["tmp_name"], $archivoCedula["name"]);
-  }
-
-  if ($archivoCurriculum["size"] == 0 || $archivoCedula["size"] == 0) {
-    $error = '<div class"alert alert-dismissible alert-success"> ' . '<p><strong>Usted tiene que adjuntar La Cédula y El Curriculum...!</strong></p>' . '</div>';
-  }else{
+  // if ($archivoCurriculum["size"] > 0) {
+  //   $mail->addAttachment($archivoCurriculum["tmp_name"], $archivoCurriculum["name"]);
+  // }
+  //
+  // if ($archivoCedula["size"] > 0) {
+  //   $mail->addAttachment($archivoCedula["tmp_name"], $archivoCedula["name"]);
+  // }
+  //
+  // if ($archivoCurriculum["size"] == 0 || $archivoCedula["size"] == 0) {
+  //   $error = '<div class"alert alert-dismissible alert-success"> ' . '<p><strong>Usted tiene que adjuntar La Cédula y El Curriculum...!</strong></p>' . '</div>';
+  // }else{
     $address = $email;
 
     $mail->setFrom($address , 'Solicitud de inscripcion de: ' . $nombre . ' ' . $apellido. ' Correo: ' . $email );
-    $mail->addAddress($address, 'mauriycf@gmail.com');
+    $mail->addAddress($address, 'oticmatvenezuela@gmail.com');
 
     $mail->isHTML( true);
 
     $mail->Subject = 'Solicitud de inscripcion';
     $mail->Body = 'Solicitud de inscripción para Diplomado en Teledetección
     y Sistemas de Información Geográfica aplicado a la Agricultura <br>' . 'Enviado por: ' . $nombre . ' ' . $apellido . '<br>' .
-    'Correo electronico: ' . $email;
+    'Correo electronico: ' . $email . 'Mensaje: ' . $mensaje;
     $mail->AltBody = 'OTIC';
 
     if (!$mail->send()) {
@@ -53,7 +54,7 @@
     }else{
       $msgExitoso = "La inscripción fue enviada, por favor espere 24 horas para seguir con la inscripcion";
     }
-  }
+  // }
 
   ?>
 
