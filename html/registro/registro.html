@@ -1,0 +1,42 @@
+<?php include 'html/overall/header.html'; ?>
+
+<?php include 'html/overall/top-nav.html'; ?>
+
+<?php include 'html/registro/functions.php'; ?>
+
+<div class="contenedor">
+
+     <h1>Estados y Municipios de México</h1>
+     <select id="estados">
+        <option></option>
+      <?php __ListarEstados(); ?>
+     </select>
+     <p></p>
+     <select id="municipios">
+     </select>
+     <p></p>
+     <div class="footer">Ejemplo Hecho por <a href="mailto:jessus.herrera@hotmail.com">Jesus Herrera</a> para <a href="http://pilaresdelcodigo.wordpress.com/">Pilares Del Codigo</a> </div>
+
+
+</div>
+<script type="text/javascript">
+$( "#estados" ).change(function() {
+var municipio = $("select#estados option:selected").val();
+var datastring = 'municipio='+municipio;
+
+    $.ajax({
+
+      type: 'POST',
+      url: 'html/registro/municipios.php',
+      data: datastring,
+         success: function(data){
+           $('#municipios').html('');
+           $('#municipios').html(data);
+         }
+    });
+});
+</script>
+
+<?php include 'html/overall/estudios.html'; ?>
+
+<?php include 'html/overall/footer.html'; ?>

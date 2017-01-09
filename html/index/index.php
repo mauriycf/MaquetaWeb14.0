@@ -21,10 +21,10 @@
             ser direccionada en cuatro líneas estratégicas que conduzca a la formación, investigación, innovación y desarrollo del sector agrícola del país; con el fin de impulsar la inclusión del sector en la apropiación de tecnologías de punta para el
             monitoreo continuo de los sistemas de producción.</p>
         <p>
-            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Contactanos Aquí!</a>
-        </p>
+            <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Contactanos Aquí!</a><a href="views/app/pdf/procesoDeInscripcion.pdf" target="blank" class="btn btn-primary btn-lg" role="button"> ¡Datos Generales para la Inscripción!</a>
     </div>
 </div>
+        </p>
 
 <section class="main container">
     <div class="row">
@@ -119,9 +119,8 @@
             <article class="post clearfix" id="metodologia">
                 <div class="tira"></div>
                 <h2 class="post-title">Metodología</h2>
-                <p class="text-justify">El diplomado será desarrollado bajo modalidad semi-presencial, la parte bajo modalidad virtual (a distancia), estará alojada en la plataforma Moodle de la oficina de Tecnologías, Información y Comunicación del Ministerio del Poder Popular
-                    para la Agricultura Productiva y Tierras. La parte presencial se llevará a cabo en la Finca Florentino, ubicada en Barrancas estado Barinas, adscrita al Ministerio del Poder Popular para la Agricultura Productiva y Tierras. Antes de
-                    iniciar los módulos se llevará a cabo en las instalaciones de la Finca Florentino un Taller de Introductorio de la plataforma Moodle en el que además se darán las instrucciones generales del diplomado. Será requisito para la obtención
+                <p class="text-justify">El diplomado será desarrollado bajo modalidad semi-presencial, estará alojada a través de la oficina de Tecnologías, Información y Comunicación del Ministerio del Poder Popular
+                    para la Agricultura Productiva y Tierras. La parte presencial se llevará a cabo en la Finca Florentino ubicada en el estado Barinas y en algunos sitios del estado de Mérida, adscrita al Ministerio del Poder Popular para la Agricultura Productiva y Tierras. Será requisito para la obtención
                     del Diploma, cumplir con las actividades asignadas y contar con el 75% de asistencia a clases de cada uno de los módulos.</p>
                 <p class="text-justify">A efectos de facilitar el desarrollo del diplomado cada participante tendrá acceso a una Biblioteca Digital en la cual podrá acceder a toda la información necesaria para completar cada modulo, la cual estará a disponible a través de internet
                     y será entregada en material físico (CD/DVD) para su consulta oportuna.</p>

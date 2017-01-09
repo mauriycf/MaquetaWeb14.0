@@ -22,6 +22,10 @@ body{
   height: 560px;
 }
 
+.container .jumbotron a{
+  margin-right: 15px;
+}
+
 /*
 .jumbotron h1, p{
   color: #fff;
