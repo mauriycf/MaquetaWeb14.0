@@ -13,7 +13,7 @@
 </style>
 
 <div class="container" col-md-9>
-    <div class="jumbotron" style="height:510px;">
+    <div class="jumbotron" style="height:600px;">
         <h1 class="titulo-jumbotron">Diplomado en Teledetección <br> y Sistemas de Información Geográfica aplicado a la Agricultura</h1>
         <br>
         <p>Es una necesidad urgente que Venezuela tenga acceso a la tecnología para el fortalecimiento de la actividad agrícola, no solo urge producir lo que nos comemos, urge conocer que, cuánto, cómo y dónde se produce.</p>
@@ -22,6 +22,10 @@
             monitoreo continuo de los sistemas de producción.</p>
         <p>
             <a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#myModal">¡Contactanos Aquí!</a><a href="views/app/pdf/procesoDeInscripcion.pdf" target="blank" class="btn btn-primary btn-lg" role="button"> ¡Datos Generales para la Inscripción!</a>
+        <br><br>
+        <p>Comparte nuestra Página ya en las Redes Sociales: </p>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//mat.gob.ve/diplomado/"> Compartir en Facebook</a>
+        <a class="icon-twitter" href="https://twitter.com/home?status=http%3A//mat.gob.ve/diplomado/"> Compartir en Twitter</a>
     </div>
 </div>
         </p>

@@ -326,6 +326,10 @@ section .row article table{
     font-size: 17px;
   }
 
+  .container .jumbotron{
+    height: 900px;
+  }
+
   .container .jumbotron p{
     font-size: 12px;
   }
