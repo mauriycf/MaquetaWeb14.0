@@ -12,6 +12,56 @@
     .nav-placeholder {}
 </style>
 
+<?php
+  if(isset($_POST['btn1']))
+  {
+    // Parametros a configurar para la conexion de la base de datos
+    $host = "localhost";    // sera el valor de nuestra BD
+    $basededatos = "Diplomado";    // sera el valor de nuestra BD
+    $usuariodb = "root";    // sera el valor de nuestra BD
+    $clavedb = "123456";    // sera el valor de nuestra BD
+
+    //Lista de Tablas
+    $tabla_db1 = "persona"; 	   // tabla de usuarios
+
+
+    error_reporting(0); //No me muestra errores
+
+    $conexion = new mysqli($host,$usuariodb,$clavedb,$basededatos);
+
+
+    if ($conexion->connect_errno) {
+        echo "Nuestro sitio experimenta fallos....";
+        exit();
+    }
+
+    $nombre = $_POST["nombre"];
+    $apellido = $_POST["apellido"];
+    $cedula = $_POST["cedula"];
+    $pasaporte = $_POST["pasaporte"];
+    $fecha_nac = $_POST["fecha_nac"];
+    $lugar = $_POST["lugar"];
+    $email = $_POST["email"];
+    $telefonoCelular= $_POST["telefonoCelular"];
+    $domicilio= $_POST["domicilio"];
+    $estados= $_POST["estados"];
+    $municipios= $_POST["municipios"];
+    $parroquias= $_POST["parroquias"];
+    $tituloObtenido= $_POST["tituloObtenido"];
+    $carrera= $_POST["carrera"];
+    $institucion= $_POST["institucion"];
+    $profesion= $_POST["profesion"];
+    $nombreEmpresa= $_POST["nombreEmpresa"];
+    $direccionTrabajo= $_POST["direccionTrabajo"];
+
+    $conexion->query("INSERT INTO $tabla_db1 (var_nombre, var_apellido, int_nacionalidad, var_pasaporte, date_fecha, var_correo, int_telefono, var_domicilio, int_estado, int_municipio, int_parroquia, int_tituloObtenido, var_carrera, var_institucion, var_profesion, var_nombreEmpresa, var_direccion)
+    values ('$nombre','$apellido','$cedula','$pasaporte','$fecha_nac','$lugar','$email','$telefonoCelular','$domicilio','$estados','$municipios','$parroquias',
+    '$tituloObtenido','$carrera','$institucion','$profesion','$nombreEmpresa','$direccionTrabajo')");
+
+    include("html/registro-prueba/cerrar_conexion.php");
+  }
+?>
+
 <div class="container" col-md-9>
     <div class="jumbotron" style="height:600px;">
         <h1 class="titulo-jumbotron">Diplomado en Teledetección <br> y Sistemas de Información Geográfica aplicado a la Agricultura</h1>

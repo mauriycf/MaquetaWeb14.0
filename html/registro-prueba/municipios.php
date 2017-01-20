@@ -28,12 +28,31 @@
 //                   Email: jessus.herrera@hotmail.com                    //
 //                  Blog: www.jesuxherrera.wordpress.com                  //
 //##########################################################################*/
-Function  __ListarEstados(){
+// $host = 'localhost';
+// $base = 'estados';
+// $usuario = 'root';
+// $password ='123456';
+// try{
+// 	$conn = new PDO('mysql:host='.$host.';dbname='.$base.'', $usuario, $password);
+// 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// 	$conn->exec("SET CHARACTER SET utf8");
+// }catch(PDOException $e){
+// 	echo "ERROR: " . $e->getMessage();
+// }
+// $municipio = $_POST['municipio'];
+//  $sql = $conn->prepare('SELECT * FROM municipios WHERE estado_id='.$municipio.' ');
+//     $sql->execute();
+//     $resultado = $sql->fetchAll();
+//     foreach ($resultado as $row) {
+//         echo "<option value='".$row['id']."'>".$row['nombre']."</option>";
+//   }
+
+Function  __ListarMunicipios(){
 
 $host = 'localhost';
-$base = 'estados';
+$base = 'Diplomado';
 $usuario = 'root';
-$password ='root';
+$password ='123456';
 try{
 	$conn = new PDO('mysql:host='.$host.';dbname='.$base.'', $usuario, $password);
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -41,11 +60,11 @@ try{
 }catch(PDOException $e){
 	echo "ERROR: " . $e->getMessage();
 }
- $sql = $conn->prepare('SELECT * FROM estados');
+ $sql = $conn->prepare('SELECT * FROM municipios where id_estado');
     $sql->execute();
     $resultado = $sql->fetchAll();
     foreach ($resultado as $row) {
-        echo "<option value='".$row['id']."'>".$row['nombre']."</option>";
+        echo "<option value='".$row['id_municipio']."'>".$row['municipio']."</option>";
     }
   }
 

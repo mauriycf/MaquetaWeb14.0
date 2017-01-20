@@ -2,11 +2,11 @@
 
 <?php include 'html/overall/top-nav.html'; ?>
 
-<?php include 'html/registro/functions.php'; ?>
+<!-- <?php include 'html/registro/functions.php'; ?> -->
 
 <div class="contenedor">
 
-     <h1>Estados y Municipios de México</h1>
+     <!-- <h1>Estados y Municipios de México</h1>
      <select id="estados">
         <option></option>
       <?php __ListarEstados(); ?>
@@ -14,12 +14,132 @@
      <p></p>
      <select id="municipios">
      </select>
-     <p></p>
-     <div class="footer">Ejemplo Hecho por <a href="mailto:jessus.herrera@hotmail.com">Jesus Herrera</a> para <a href="http://pilaresdelcodigo.wordpress.com/">Pilares Del Codigo</a> </div>
+     <p></p> -->
 
+     <div class="panel panel-default">
+         <div class="panel-body">
+           <h3 class="info">¡REGISTRO!</h3>
+           <form name="form1" action="POST">
+             <form action="" method="POST" name="contacform" enctype="multipart/form-data">
+                 <div class="modal-body">
+                     <div class="form">
+                         <div class="form-group">
+                             <label for="nombre"><span class="glyphicon glyphicon-user"></span> Nombres</label>
+                             <input type="text" class="form-control" name="nombre" id="user_login" placeholder="Introducir Nombres">
+                         </div>
+                         <div class="form-group">
+                             <label for="apellido"><span class="glyphicon glyphicon-user"></span> Apellidos</label>
+                             <input type="text" class="form-control" name="apellido" id="user_login" placeholder="Introducir Apellidos">
+                         </div>
+                         <div class="form-group">
+                             <label for="cedula"><span class="glyphicon glyphicon-lock"></span> Nacionalidad</label>
+                             <select class="form-control" id="sel1" name="cedula">
+                               <option value="0">-</option>
+                               <option value="1">V</option>
+                               <option value="2">E</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="pasaporte"><span class="glyphicon glyphicon-user"></span> Pasaporte</label>
+                             <input type="text" class="form-control" name="pasaporte" id="pasaporte" placeholder="Pasaporte">
+                         </div>
+                         <div class="form-group">
+                             <label for="fechaNacimiento"><span class="glyphicon glyphicon-user"></span> Lugar y Fecha de Nacimiento</label>
+                             <input type="text" class="form-control" name="fechaNacimiento" id="fechaNacimiento" placeholder="Lugar y Fecha de Nacimiento">
+                         </div>
+                         <div class="form-group">
+                             <label for="correoElectronico"><span class="glyphicon glyphicon-user"></span> Correo Electrónico</label>
+                             <input type="text" class="form-control" name="email" id="email" placeholder="E-mail">
+                         </div>
+                         <div class="form-group">
+                             <label for="telefono"><span class="glyphicon glyphicon-user"></span> Teléfonos</label>
+                             <input type="text" class="form-control" name="telefonoHabitacion" id="telefonoHabitacion" placeholder="Habitacion">
+                             <input type="text" class="form-control" name="telefonoCelular" id="telefonoCelular" placeholder="Celular" >
+                             <input type="text" class="form-control" name="telefonoOficina" id="telefonoOficina" placeholder="oficina" >
+                         </div>
+                         <div class="form-group">
+                             <label for="domicilio"><span class="glyphicon glyphicon-user"></span> Domicilio Completo</label>
+                             <input type="text" class="form-control" name="domicilio" id="domicilio" placeholder="Indique(calle,avenida,edificio,piso etc)">
+                             <label for="domicilio"> Estado</label>
+                             <select name="cliente" class="form-control">
+
+                                    <?
+                                         $conn=mysqli_connect("localhost","root","root","diplomado") ;
+                                               if ($conn)echo "conexion ok" ;
+                                              else echo "conexion ko";
+                                              $consulta="select * from Estados";
+                                              $resultado=mysqli_query($conn,$consulta);
+
+                                                     while($lista=mysqli_fetch_array($resultado)){
+
+                             	    ?>
+                                                <option value="<?php echo $lista['idEstado'] ?>">  <? echo $lista['estado']?></option>
+                                 <? } ?>
+                             </select>
+                             <label for="domicilio"> Municipio</label>
+                             <select name="cliente" class="form-control">
+
+                                    <?
+                                         $conn=mysqli_connect("localhost","root","root","diplomado") ;
+                                              $consulta="SELECT * FROM Municipios WHERE municipio";
+                                              $resultado=mysqli_query($conn,$consulta);
+
+                                                     while($lista=mysqli_fetch_array($resultado)){
+
+                             	    ?>
+                                                <option value="<?php echo $lista['idEstado'] ?>">  <? echo $lista['municipio']?></option>
+                                 <? } ?>
+                             </select>
+                             <label for="domicilio"> Parroquia</label>
+                             <select class="form-control" id="sel1" name="parroquia">
+                               <option value="0">-</option>
+                               <option value="1">V</option>
+                               <option value="2">E</option>
+                             </select>
+                         </div>
+                         <h4 class="info"> Formación Académica</h4>
+                         <div class="form-group">
+                             <label for="correoElectronico"> Titulo obtenido</label>
+                             <select class="form-control" id="sel1" name="tituloObtenido">
+                               <option value="0">-</option>
+                               <option value="1">Técnico Superior Universitario</option>
+                               <option value="2">Licenciatura</option>
+                               <option value="3">Ingeniería</option>
+                               <option value="4">Postgrado</option>
+                               <option value="5">Otros (Indique)</option>
+                             </select>
+                             <label for="correoElectronico"> Carrera</label>
+                             <input type="text" class="form-control" name="carrera" id="carrera" placeholder="Carrera">
+                             <label for="correoElectronico"> Institución</label>
+                             <input type="text" class="form-control" name="institucion" id="institucion" placeholder="Institucion">
+                         </div>
+                         <h4 class="info"> Datos Laborales</h4>
+                         <div class="form-group">
+                             <label for="profesion"> Profesión/Ocupación</label>
+                             <input type="text" class="form-control" name="profesion" id="profesion" placeholder="Profesión/Ocupación">
+                             <label for="nombreEmpresa"> Nombre de la Empresa</label>
+                             <input type="text" class="form-control" name="nombreEmpresa" id="nombreEmpresa" placeholder="Nombre de la Empresa">
+                             <label for="direccionTrabajo"> Dirección</label>
+                             <input type="text" class="form-control" name="direccionTrabajo" id="direccionTrabajo" placeholder="Dirección">
+                         </div>
+                         <!-- <div class="form-group">
+                             <label for="email"><span class="glyphicon glyphicon-envelope"></span> Adjuntar copia de la Cédula</label>
+                             <input type="file" name="archivoCedula" size="20">
+                         </div>
+                         <div class="form-group">
+                             <label for="email"><span class="glyphicon glyphicon-envelope"></span> Adjuntar Curriculum</label>
+                             <input type="file" name="archivoCurriculum" size="20">
+                         </div> -->
+                         <button type="submit" class="btn btn-default btn-success btn-block" id="iniciar_sesion" name="button">Enviar</button>
+                     </div>
+                 </div>
+             </form>
+           </form>
+         </div>
+     </div>
 
 </div>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $( "#estados" ).change(function() {
 var municipio = $("select#estados option:selected").val();
 var datastring = 'municipio='+municipio;
@@ -35,7 +155,7 @@ var datastring = 'municipio='+municipio;
          }
     });
 });
-</script>
+</script> -->
 
 <?php include 'html/overall/estudios.html'; ?>
 
