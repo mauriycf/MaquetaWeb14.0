@@ -119,3 +119,23 @@
       </form>
     </div>
 </div>
+
+<!-- <div class="form-group">
+    <label for="domicilio"><span class="glyphicon glyphicon-user"></span> Domicilio Completo</label>
+    <input type="text" class="form-control" name="domicilio" id="domicilio" placeholder="Indique(calle,avenida,edificio,piso etc)">
+    <label for="domicilio"> Estado</label>
+    <select id="estados" class="form form-control" name="estados">
+       <option></option>
+     <?php __ListarEstados(); ?>
+    </select>
+    <label for="domicilio"> Municipio</label>
+    <select id="municipios" class="form form-control" name="municipios">
+      <option></option>
+      <?php __ListarMunicipios(); ?>
+    </select>
+    <label for="domicilio"> Parroquia</label>
+    <select id="municipios" class="form form-control" name="parroquias">
+      <option></option>
+      <?php __ListarParroquias(); ?>
+    </select>
+</div> -->
