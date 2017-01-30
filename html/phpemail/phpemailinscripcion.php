@@ -16,6 +16,7 @@
   $nombre=$_POST['nombre'];
   $apellido=$_POST['apellido'];
   $cedula = $_POST['cedula'];
+  $nroCedula = $_POST['nroCedula'];
   $pasaporte = $_POST['pasaporte'];
   $fecha_nac = $_POST['fecha_nac'];
   $lugar = $_POST['lugar'];
@@ -34,9 +35,9 @@
   $direccionTrabajo = $_POST['direccionTrabajo'];
 
   $error;
-    $address = $email;
+    $address = 'oticmatvenezuela@gmail.com';
 
-    $mail->setFrom($address , 'Datos de Inscripcion: ' . $nombre . ' ' . $apellido . ' Correo: ' . $email );
+    $mail->setFrom($address , 'Datos de Inscripcion: ' . 'Nombre: ' . $nombre . 'Apellido: ' . $apellido);
     $mail->addAddress($address, 'oticmatvenezuela@gmail.com');
 
     $mail->isHTML( true);
@@ -44,7 +45,7 @@
     $mail->Subject = 'Solicitud de inscripcion';
     $mail->Body = 'Solicitud de inscripción para Diplomado en Teledetección
     y Sistemas de Información Geográfica aplicado a la Agricultura <br>' . 'Enviado por: ' . $nombre . ' ' . $apellido . '<br>' .
-    'Los siguientes datos: <br><br> Cedula: ' . $cedula . '<br> Pasaporte: ' . $pasaporte . '<br> Fecha de Nacimiento: ' . $fecha_nac .
+    'Los siguientes datos: <br><br> Cedula: ' . $cedula . 'Número de cedula: ' . $nroCedula . '<br> Pasaporte: ' . $pasaporte . '<br> Fecha de Nacimiento: ' . $fecha_nac .
     '<br> Lugar de nacimiento: ' . $lugar . '<br> email: ' . $email . '<br> Telefono Habitacion: ' . $telefonoHabitacion . '<br> Telefono Celular: ' . $telefonoCelular .
     '<br> Domicilio: ' . $domicilio . '<br> Estado: ' . $estado . '<br> Municipio: ' . $municipio . '<br> Parroquia: ' . $parroquia . '<br> Titulo Obtenido: ' . $tituloObtenido .
     '<br> Carrera: ' . $carrera . '<br> Institucion: ' . $institucion . '<br> Profesion: ' . $profesion . '<br> Nombre de la Empresa: ' . $nombreEmpresa . '<br> Direccion de trabajo: ' . $direccionTrabajo .

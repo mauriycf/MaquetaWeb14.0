@@ -38,6 +38,8 @@ display:block;
                           <option value="V">V</option>
                           <option value="E">E</option>
                         </select>
+                        <label for="pasaporte"><span class="glyphicon glyphicon-user"></span> Cedula</label>
+                        <input type="text" class="form-control" name="nroCedula" id="pasaporte" placeholder="Cedula">
                     </div>
                     <div class="form-group">
                         <label for="pasaporte"><span class="glyphicon glyphicon-user"></span> Pasaporte</label>
